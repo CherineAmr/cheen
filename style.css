@@ -392,3 +392,5 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 5vw; }
   .nav a { border-top: 1px solid #111111; }
   .nav { border-bottom: 1px solid #111111; }
 }
+/* neon green border around the about photo */
+.about-img { border: 1px solid #39ff14; box-shadow: 0 0 6px rgba(57,255,20,0.7), 0 0 14px rgba(57,255,20,0.35); }
