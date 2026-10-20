@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cheen</title>
+  <meta name="description" content="CHEEN (Cherine Amr) — Egyptian musician, composer and multidisciplinary artist." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <a href="#top" class="logo">cheen</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">menu</button>
+    <nav class="nav">
+      <a href="#music">music</a>
+      <a href="#about">about</a>
+      <a href="#shows">shows</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <img src="images/photo-1.jpg" alt="CHEEN singing into a microphone in the studio" class="hero-img" />
+      <div class="hero-actions">
+        <a href="#music" class="btn">Listen</a>
+        <a href="#shows" class="btn">Shows</a>
+      </div>
+    </section>
+
+    <!-- ===== MUSIC ===== -->
+    <section id="music" class="section">
+      <h2 class="section-title">music</h2>
+
+      <!-- To add a video: copy a .yt block, change data-id (the code after "watch?v=" or "youtu.be/") and the thumbnail -->
+      <div class="videos single">
+        <div class="yt" data-id="lnRnK-d1uMM" data-title="CHEEN - 3adi">
+          <img src="images/3adi-thumb.jpg" alt="CHEEN - 3adi" loading="lazy" />
+          <button class="yt-play" aria-label="Play 3adi">▶ Play</button>
+          <span class="yt-title">3adi</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="https://www.youtube.com/@cherineamr/releases" target="_blank" rel="noopener" class="btn">All releases</a>
+        <a href="https://cheenamr.bandcamp.com/" target="_blank" rel="noopener" class="btn">Bandcamp</a>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about">
+      <img src="images/photo-2.jpg" alt="CHEEN playing guitar in the studio" class="about-img" />
+      <div class="about-text">
+        <h2 class="section-title left">about</h2>
+        <p>
+          CHEEN (Cherine Amr) is an Egyptian musician, composer, and multidisciplinary
+          artist known for her long-standing role in Egypt’s underground rock and metal
+          scenes. She is the founder and frontwoman of Massive Scar Era and also works
+          under the solo moniker CHEEN, exploring electro-rock and experimental forms.
+        </p>
+        <p>
+          Active since the mid-2000s, her work has contributed to the development of
+          alternative music culture in Egypt through recordings, international performances,
+          and cross-disciplinary projects. CairoScene has described Amr as “the matriarch
+          of Egypt’s rock underground,” in recognition of her sustained influence and
+          leadership within the scene.
+        </p>
+        <p>
+          Her career and music have been featured in internationally recognized documentaries
+          including <em>Microphone</em> (2010), directed by Ahmad Abdalla, and
+          <em>Before the Spring: After the Fall</em> (2012), directed by Jed Rothstein, both of
+          which document Egypt’s independent and underground music movements.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== PRESS QUOTE ===== -->
+    <section class="section press">
+      <blockquote>
+        <p>“CHEEN has found a way to make her messages sharper than ever, delivering this
+        particular one with the kind of energy we’ve come to expect from the ‘matriarch’ of
+        Egypt’s rock underground.”</p>
+        <cite>— SceneNoise</cite>
+      </blockquote>
+    </section>
+
+    <!-- ===== SHOWS ===== -->
+    <!-- Dates come from Bandsintown automatically. Add/edit shows in Bandsintown for Artists. -->
+    <section id="shows" class="section">
+      <h2 class="section-title">shows</h2>
+      <div class="bit-wrap">
+        <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+        <a class="bit-widget-initializer"
+          data-artist-name="id_11430696"
+          data-app-id="f9bd8b3b9d23547e21a855ad090bbb7d"
+          data-display-details="false"
+        ></a>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <h2 class="section-title">contact</h2>
+      <p class="center caption">Booking, press &amp; collaborations — send me a message.</p>
+
+      <!-- Messages are delivered by Web3Forms. Access key from Web3Forms (safe to be public). -->
+      <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="113e502f-7b57-44f8-a1b5-be1a3136f2e6" />
+        <input type="hidden" name="subject" value="New message from the cheen website" />
+        <input type="hidden" name="from_name" value="cheen website" />
+        <!-- Honeypot: invisible to people, bots fill it in and get rejected -->
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" />
+
+        <label>Name
+          <input type="text" name="name" required autocomplete="name" />
+        </label>
+        <label>Email
+          <input type="email" name="email" required autocomplete="email" />
+        </label>
+        <label>Subject
+          <select name="topic">
+            <option>Booking</option>
+            <option>Press</option>
+            <option>Collaboration</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Message
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <!-- Human check (hCaptcha) -->
+        <div class="h-captcha" data-captcha="true"></div>
+
+        <button type="submit" class="btn">Send</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="socials">
+        <a href="https://www.instagram.com/cheenmusic" target="_blank" rel="noopener" class="btn small">Instagram</a>
+        <a href="https://www.tiktok.com/@cheenmusic" target="_blank" rel="noopener" class="btn small">TikTok</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> cheen</span>
+  </footer>
+
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+  <script src="script.js"></script>
+</body>
+</html>
