@@ -361,3 +361,6 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 5vw; }
   font-size: clamp(1.3rem, 3.2vw, 2.4rem); margin-top: 0.7rem; align-self: flex-start;
 }
 .hero .ticker { margin-top: 0; }
+/* keep the hero name on the left */
+.hero-name { align-items: flex-start !important; text-align: left !important; }
+.hero-en, .hero-ar { align-self: flex-start !important; text-align: left !important; }
