@@ -365,5 +365,5 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 5vw; }
 .hero-name { align-items: flex-start !important; text-align: left !important; }
 .hero-en, .hero-ar { align-self: flex-start !important; text-align: left !important; }
 .menu-toggle { margin-left: auto; }
-   /* menu on the left, vertically centered in the bar */
-   .site-header { justify-content: flex-start; padding-top: 1rem; padding-bottom: 1rem; }
+/* menu on the left, vertically centered in the bar */
+.site-header { justify-content: flex-start; padding-top: 1rem; padding-bottom: 1rem; }
