@@ -341,3 +341,23 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 5vw; }
   to   { transform: translateX(0); }
 }
 @media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; } }
+/* ----- Full-width hero photo with the name on it ----- */
+.hero { position: relative; width: 100vw; margin-left: calc(50% - 50vw); padding-top: 0; }
+.hero-img { width: 100%; height: min(82vh, 760px); aspect-ratio: auto; object-fit: cover; object-position: center 40%; }
+.hero::after {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: min(82vh, 760px);
+  background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0) 55%); pointer-events: none;
+}
+.hero-name {
+  position: absolute; left: 5vw; right: 5vw; top: min(82vh, 760px); transform: translateY(-100%);
+  padding-bottom: 2.2rem; z-index: 1; display: flex; flex-direction: column; color: #fff;
+}
+.hero-en {
+  font-family: "Anton", "Impact", sans-serif; font-weight: 400;
+  font-size: clamp(4.5rem, 17vw, 15rem); line-height: 0.82; letter-spacing: 0.01em;
+}
+.hero-ar {
+  font-family: "Reem Kufi", "Geeza Pro", sans-serif; font-weight: 500;
+  font-size: clamp(1.3rem, 3.2vw, 2.4rem); margin-top: 0.7rem; align-self: flex-start;
+}
+.hero .ticker { margin-top: 0; }
