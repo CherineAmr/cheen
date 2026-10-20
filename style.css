@@ -365,3 +365,8 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 5vw; }
 .hero-name { align-items: flex-start !important; text-align: left !important; }
 .hero-en, .hero-ar { align-self: flex-start !important; text-align: left !important; }
 .menu-toggle { margin-left: auto; }
+/* center the menu */
+.site-header { justify-content: center; }
+@media (max-width: 760px) {
+  .site-header { justify-content: flex-end; }
+}
