@@ -367,3 +367,17 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 5vw; }
 .menu-toggle { margin-left: auto; }
 /* menu on the left, vertically centered in the bar */
 .site-header { justify-content: flex-start; padding-top: 1rem; padding-bottom: 1rem; }
+/* ----- Computer view: photo inside the page width, name on it ----- */
+@media (min-width: 761px) {
+  .hero { width: auto; margin-left: 0; padding-top: 2rem; }
+  .hero::after { content: none; }
+  .hero-frame { position: relative; }
+  .hero-frame::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0) 55%);
+  }
+  .hero-img { height: auto; aspect-ratio: 3 / 2; }
+  .hero-name { left: 2.5rem; right: 2.5rem; top: auto; bottom: 0; transform: none; padding-bottom: 1.8rem; }
+  .hero-en { font-size: clamp(3.5rem, 12vw, 10rem); }
+  .hero-ar { font-size: clamp(1.1rem, 2.4vw, 1.9rem); }
+}
