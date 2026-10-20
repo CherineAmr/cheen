@@ -364,3 +364,4 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 5vw; }
 /* keep the hero name on the left */
 .hero-name { align-items: flex-start !important; text-align: left !important; }
 .hero-en, .hero-ar { align-self: flex-start !important; text-align: left !important; }
+.menu-toggle { margin-left: auto; }
