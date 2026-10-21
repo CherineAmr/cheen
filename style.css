@@ -394,3 +394,16 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 5vw; }
 }
 /* neon green border around the about photo */
 .about-img { border: 1px solid #39ff14; box-shadow: 0 0 6px rgba(57,255,20,0.7), 0 0 14px rgba(57,255,20,0.35); }
+
+/* ----- Merch ----- */
+.merch-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+.merch-item { width: min(320px, 100%); display: flex; flex-direction: column; align-items: center; gap: 0.4rem; text-align: center; }
+.merch-item img {
+  width: 100%; aspect-ratio: 1 / 1; object-fit: cover;
+  border: 1px solid #111111; transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.merch-item:hover img { border-color: #39ff14; box-shadow: 0 0 6px rgba(57,255,20,0.7), 0 0 14px rgba(57,255,20,0.35); }
+.merch-name { margin-top: 0.4rem; font-weight: 500; letter-spacing: 0.04em; }
+.merch-price { color: #777777; font-size: 0.9rem; }
+.merch-item .btn { margin-top: 0.4rem; }
+.merch-item:hover .btn { background: #39ff14; color: #000; }
