@@ -429,3 +429,11 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 5vw; }
 /* less space between the bio and the quote */
 .press { padding-top: 1.5rem; }
 .about-text p:last-child { margin-bottom: 0; }
+/* ----- Neon green box around each section title ----- */
+.section-title {
+  display: table; margin-left: auto; margin-right: auto;
+  padding: 0.35rem 1.4rem;
+  border: 1px solid #39ff14;
+  box-shadow: 0 0 6px rgba(57,255,20,0.7), 0 0 14px rgba(57,255,20,0.35);
+}
+.section-title.left { margin-left: 0; }
